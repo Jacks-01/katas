@@ -1,5 +1,5 @@
-const kata2 = () => {
+const stringCalculator = (numberString) => {
 	return;
 };
 
-module.exports = kata2;
+module.exports = stringCalculator;
