@@ -12,6 +12,11 @@ describe('Kata 2: String Calculator', () => {
 		const calculator = new StringCalculator();
 		expect(calculator.add(input)).toBe(10);
     });
+	it('returns the sum of all of the numbers in the string', () => {
+		const input = '5, 5, 5'
+		const calculator = new StringCalculator();
+		expect(calculator.add(input)).toBe(15);
+    });
 	
     
 
