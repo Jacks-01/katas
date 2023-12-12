@@ -1,3 +1,3 @@
-describe('String Calculator', () => {
+describe('Kata 2: String Calculator', () => {
 	it.todo('');
 });
