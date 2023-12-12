@@ -1,7 +1,7 @@
 const FizzBuzz = require('../src/kata1.js');
 
 describe('Kata 1:  FizzBuzz', () => {
-    
+
 	it('returns Fizz if the input is a multiple of 3', () => {
 		const input = 3;
 		expect(FizzBuzz(input)).toBe('Fizz');
@@ -12,5 +12,8 @@ describe('Kata 1:  FizzBuzz', () => {
 		expect(FizzBuzz(input)).toBe('Buzz');
 	});
 
-	it.todo('returns FizzBuzz if the input is a multiple of 3 AND 5');
+	it('returns FizzBuzz if the input is a multiple of 3 AND 5', () => {
+        const input = 15;
+        expect(FizzBuzz(input)).toBe('FizzBuzz');
+    });
 });
