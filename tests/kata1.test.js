@@ -16,12 +16,16 @@ describe('Kata 1:  FizzBuzz', () => {
 	});
 
 	it('returns FizzBuzz if the input is a multiple of 3 AND 5', () => {
-		const input = 15;
-		expect(FizzBuzz(input)).toBe('FizzBuzz');
+		const input = [15, 30, 45, 60, 75, 90];
+		input.forEach((num) => {
+			expect(FizzBuzz(num)).toBe('FizzBuzz');
+		});
 	});
 
 	it('returns null if number is NOT a multiple of 3 or 5', () => {
-		const input = 1;
-		expect(FizzBuzz(input)).toBe(null);
+		const input = [1, 2, 4];
+		input.forEach((num) => {
+			expect(FizzBuzz(num)).toBe(null);
+		});
 	});
 });
