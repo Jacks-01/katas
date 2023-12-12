@@ -5,7 +5,10 @@ describe('Kata 1:  FizzBuzz', () => {
 		expect(FizzBuzz(3)).toBe('3');
 	});
 
-	it.todo('returns Fizz if the input is a multiple of 3');
+	it('returns Fizz if the input is a multiple of 3', () => {
+		const input = 3;
+		expect(FizzBuzz(input)).toBe('Fizz');
+	});
 
 	it.todo('returns Buzz if the input is a multiple of 5');
 
