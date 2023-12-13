@@ -19,23 +19,21 @@ describe('Kata 2: String Calculator', () => {
 	});
 
 	it('add method can parse new lines instead of commas', () => {
-		const input =
-			`4
+		const input = `4
 			4
 			4`;
 		const calculator = new StringCalculator();
 		expect(calculator.add(input)).toBe(12);
 	});
 
-    it('validate the string to not have the separator at the end', () => {
-		const input =
-		`4
+	it('validate the string to not have the separator at the end', () => {
+		const input = `4
 		4
 		4
 		`;
-	const calculator = new StringCalculator();
-	expect(calculator.add(input)).toBe(Error);
+		const calculator = new StringCalculator();
+		expect(() => calculator.add(input).toThrow(Error));
 	});
-    
+
 	it.todo('can handle more than one delimiter');
 });
