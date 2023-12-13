@@ -16,8 +16,8 @@ class StringCalculator {
 	}
 
 	parseString(numberString) {
-		// console.log(parseInt(numberString.charAt(numberString.length)));
-		if (isNaN(parseInt(numberString.charAt(numberString.length)))) {
+		console.log(numberString.charAt(numberString.length - 1));
+		if (isNaN(parseInt(numberString.charAt(numberString.length - 1)))) {
 			throw new Error('Error');
 		}
 		const stringArray = numberString.split('\n'); // split the string into an array to add each value

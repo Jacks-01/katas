@@ -35,5 +35,7 @@ describe('Kata 2: String Calculator', () => {
 		expect(() => calculator.add(input).toThrow(Error));
 	});
 
-	it.todo('can handle more than one delimiter');
+	it('can handle more than one delimiter', () => {
+		let inputs = ['2, 2', '2; 3', '']
+	});
 });
