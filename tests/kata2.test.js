@@ -27,7 +27,15 @@ describe('Kata 2: String Calculator', () => {
 		expect(calculator.add(input)).toBe(12);
 	});
 
-    it.todo('validate the string to not have the separator at the end');
+    it('validate the string to not have the separator at the end', () => {
+		const input =
+		`4
+		4
+		4
+		`;
+	const calculator = new StringCalculator();
+	expect(calculator.add(input)).toBe(Error);
+	});
     
 	it.todo('can handle more than one delimiter');
 });
