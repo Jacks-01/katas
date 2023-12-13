@@ -45,7 +45,7 @@ describe('Kata 2: String Calculator', () => {
 			2sep3`]
 		const calculator = new StringCalculator();
 		inputs.forEach(input => {
-			expect(() => calculator.add(input)).toBe(5);
+			expect(() => calculator.add(input).toBe(5));
 		});
 	});
 });

@@ -15,12 +15,13 @@ class StringCalculator {
 		return 0; // Guard Clause
 	}
 
-	parseString(numberString) {
-		console.log(numberString.charAt(numberString.length - 1));
+    parseString(numberString) {
+        
 		if (isNaN(parseInt(numberString.charAt(numberString.length - 1)))) {
 			throw new Error('Error');
-		}
-		const stringArray = numberString.split('\n'); // split the string into an array to add each value
+        }
+        const stringDelimiter = stringArray.charAt(3); 
+		const stringArray = numberString.split(stringDelimiter); // split the string into an array to add each value
 
 		let numbersArray = stringArray.map((element) => {
 			return parseInt(element);
