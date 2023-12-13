@@ -18,7 +18,14 @@ describe('Kata 2: String Calculator', () => {
 		expect(calculator.add(input)).toBe(15);
 	});
 
-	it.todo('add method can parse new lines instead of commas');
+	it('add method can parse new lines instead of commas', () => {
+		const input =
+			`4
+			4
+			4`;
+		const calculator = new StringCalculator();
+		expect(calculator.add(input)).toBe(12);
+	});
 
     it.todo('validate the string to not have the separator at the end');
     
