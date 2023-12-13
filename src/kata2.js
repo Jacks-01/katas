@@ -15,7 +15,7 @@ class StringCalculator {
 	}
 
 	parseString(numberString) {
-		const stringArray = numberString.split(','); // split the string into an array to add each value
+		const stringArray = numberString.split('\n'); // split the string into an array to add each value
 
 		let numbersArray = stringArray.map((element) => {
 			return parseInt(element);
