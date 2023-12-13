@@ -36,6 +36,16 @@ describe('Kata 2: String Calculator', () => {
 	});
 
 	it('can handle more than one delimiter', () => {
-		let inputs = ['2, 2', '2; 3', '']
+		let inputs = [
+			`//,
+			2, 2`,
+			`//;
+			2; 3`,
+			`//sep
+			2sep3`]
+		const calculator = new StringCalculator();
+		inputs.forEach(input => {
+			expect(() => calculator.add(input)).toBe(5);
+		});
 	});
 });
