@@ -23,11 +23,13 @@ const cities = [
 ];
 
 const searchCities = (searchString) => {
+	if (searchString.length < 2) {
+		return 'no results';
+	}
 
-    if (searchString.length < 2) { return 'no results'; }
+    const searchResults = cities.filter((city) => city.includes(searchString));
     
-    return 'no results';
-}
+	return searchResults;
+};
 
-
-module.exports = {searchCities, cities}
+module.exports = { searchCities, cities };
