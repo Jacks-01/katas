@@ -23,11 +23,10 @@ const cities = [
 ];
 
 const searchCities = (searchString) => {
-	if (searchString.length < 2) {
-		return 'no results';
-    }
-    
-    // format string so search results are case insensitive
+
+    if (searchString === '*') { return cities }
+
+	if (searchString.length < 2) { return 'no results' }
 
     const searchResults = cities.filter((city) => city.toLowerCase().includes(searchString.toLowerCase()));
     

@@ -1,4 +1,4 @@
-const { searchCities } = require('../src/kata4');
+const { searchCities, cities } = require('../src/kata4');
 
 describe('Kata 4: Search Functionality', () => {
     it('returns no results if the search input is less than 2 characters', () => {
@@ -25,6 +25,13 @@ describe('Kata 4: Search Functionality', () => {
         const searchInput = 'ape'
         
         expect(searchCities(searchInput)).toStrictEqual(['Budapest']);
+    });
+
+    it('return all results if the input is a "*" (asterisk)', () => {
+
+        const searchInput = '*'
+        
+        expect(searchCities(searchInput)).toStrictEqual(cities);
     });
 
 
