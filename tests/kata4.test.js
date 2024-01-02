@@ -20,5 +20,12 @@ describe('Kata 4: Search Functionality', () => {
         expect(searchCities(searchInput)).toStrictEqual(['Valencia', 'Vancouver']);
     });
 
+    it('should match on any part of the city name, not just the beginning of the string', () => {
+
+        const searchInput = 'ape'
+        
+        expect(searchCities(searchInput)).toStrictEqual(['Budapest']);
+    });
+
 
 });
